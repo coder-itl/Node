@@ -2,6 +2,12 @@
 
 ###  Node 版本管理工具
 
++ `Node`官方文档
+
+  ```bash
+  https://nodejs.org/dist/latest-v16.x/docs/api/
+  ```
+
 + `windows`管理工具下载
 
   ```bash
@@ -89,3 +95,41 @@
 
   
 
++ 注意检测原先的`bash`使用`node`命令
+
+  + 有问题配置`nvm`环境变量
+
+    ```bash
+    NVM_HOME: D:\nvm\
+    NVM_SYMLINK: C:\Program Files\nodejs [安装 nvm 时注意文件位置]
+    ```
+
+    
+
+
+
+### Node-Proj
+
+- 目录结构划分
+
+  ```javascript
+      app
+      controller // 控制层
+      router // 路由
+      service // 数据库
+      utils // 工具类
+  
+      ../main.js // 入口文件
+  ```
+
++ 文档
+
+  ```bash
+  env: https://www.npmjs.com/package/dotenv 作用: 读取根目录下的 .env 文件
+  ```
+
++ 测试工具`postman`基本使用
+
+  ![postman.gif](https://i.loli.net/2021/06/21/nMl4Sk8LOFQv1CB.gif)
+
+  
