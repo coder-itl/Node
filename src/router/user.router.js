@@ -4,8 +4,9 @@ const Router = require('koa-router')
 const userRouter = new Router({ prefix: '/users' })
 
 const { create } = require('../controller/user.controller')
+const { verifyUser } = require('../middleware/user.middleware')
 
-// create 封装出去  
-userRouter.post('/', create)
+// create 封装出去
+userRouter.post('/', verifyUser, create)
 
 module.exports = userRouter

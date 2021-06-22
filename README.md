@@ -132,4 +132,17 @@
 
   ![postman.gif](https://i.loli.net/2021/06/21/nMl4Sk8LOFQv1CB.gif)
 
++ `mysql2`
+
+  ```sql
+  CREATE TABLE
+  IF
+  	NOT EXISTS users (
+  		id INT PRIMARY KEY auto_increment,
+  		NAME VARCHAR ( 20 ) NOT NULL UNIQUE,
+  		PASSWORD VARCHAR ( 50 ) NOT NULL,
+  	createAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  	updateAtr TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
+  ```
+
   
